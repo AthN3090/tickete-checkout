@@ -5,19 +5,28 @@ function Input({title, type, placeholder, errorMessage}) {
 
     const inputRef = useRef()
     useEffect(() =>{
-        inputRef.current.addEventListener('blur',function(){
+        const inputField = inputRef.current
+        function blurHandler(){
             // input field validation
-            if(inputRef.current.value === ""){ 
+            if(inputField.value === ""){ 
                 setError(true)
-            }
-                
-            
-        })
-        inputRef.current.addEventListener('input',function(){
+            }  
+        }
+        function inputHandler(){
             if(error)
                 setError(false)    
-        })
-    },[error])
+        }
+
+        if(errorMessage){
+            inputField.addEventListener('blur',blurHandler)
+            inputField.addEventListener('input',inputHandler)
+        }
+        
+        return () => {
+            inputField.removeEventListener('blur',blurHandler)
+            inputField.removeEventListener('input',inputHandler)
+        }
+    },[error, errorMessage])
     return (
         <div className="input-field-wrapper">
             <div className="input-field">

@@ -5,14 +5,14 @@
     justify-content: space-between;
 }
 .navbar-logo{
-    margin: 24px 40px;
+    margin: 24px 24px;
     width: 76px;
     height: 24px;
 }
 .navbar-help-wrapper{
     display: flex;
     gap: 4px;
-    padding: 12px 16px;
+    padding: 12px 24px;
     align-items: center;
     justify-content: center;
     font-family: 'Open Sans';

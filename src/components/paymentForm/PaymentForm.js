@@ -87,23 +87,21 @@ function PaymentForm() {
                 <div className="payment-section-card-details">
                   <Input
                     type="text"
-                    placeholder="Full name"
-                    errorMessage="Enter valid Full name"
+                    placeholder="Name On Card"
                   />
                   <Input
-                    type="tel"
-                    placeholder="Dropdown"
-                    errorMessage="Invalid Phone Number"
+                    type="number"
+                    placeholder="Card Number"
+                    
                   />
                   <Input
-                    type="tel"
-                    placeholder="Dropdown"
-                    errorMessage="Invalid Phone Number"
+                    type="number"
+                    placeholder="Expiry Date"
+                    
                   />
                   <Input
-                    type="tel"
-                    placeholder="Dropdown"
-                    errorMessage="Invalid Phone Number"
+                    type="password"
+                    placeholder="CVV"
                   />
                 </div>
               </div>
