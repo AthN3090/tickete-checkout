@@ -51,6 +51,9 @@
     transition: 0.3s;
 
 }
+.input-field label:hover{
+    cursor: text
+}
 .input-field input:focus + label, .input-field input:valid + label, .input-field label:focus{
     font-size: 12px; 
     transition: 0.3s;

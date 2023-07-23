@@ -4,6 +4,14 @@ function Input({title, type, placeholder, errorMessage}) {
     const [error, setError]= useState(false)
 
     const inputRef = useRef()
+
+    function labelClickHAndler(e) {
+        e.preventDefault()
+        inputRef.current.focus()
+        
+    }
+
+
     useEffect(() =>{
         const inputField = inputRef.current
         function blurHandler(){
@@ -31,7 +39,7 @@ function Input({title, type, placeholder, errorMessage}) {
         <div className="input-field-wrapper">
             <div className="input-field">
                 <input className={error? "input-error-style": "input-valid-style"} title={title} ref={inputRef} type={type} required></input>
-                <label className={error? "label-error-style": "label-valid-style"}>{placeholder}</label>
+                <label className={error? "label-error-style": "label-valid-style"} onClick={labelClickHAndler}>{placeholder}</label>
             </div>
             <div className="input-field-error">
                 {error && errorMessage}
