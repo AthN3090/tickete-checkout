@@ -1,0 +1,2 @@
+1. CSS naming best practices
+2. declare FONT, COLOR global variables according to the design

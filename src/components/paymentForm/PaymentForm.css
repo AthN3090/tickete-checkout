@@ -1,0 +1,383 @@
+.payment-form-wrapper{
+    color: #474747;
+    margin: 0 auto;
+    display: flex;
+    padding: 0px 24px;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.payment-form{
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    padding-top: 40px;
+    border-top: 1px solid #D6D6D6;
+    
+}
+.payment-form-title{
+    color: #474747;
+    font-family: 'Open Sans';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.96px;
+}
+
+.payment-form-container{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 1200px;
+    padding-bottom: 24px;
+    
+
+}
+
+
+.payment-form-section{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.payment-form-details{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+.payment-section-header > span:nth-child(1){
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+
+}
+.payment-section-header > span:nth-child(2){
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+
+}
+.payment-section-header{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.payment-section-input-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:24px;
+    
+    
+}
+.payment-section-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.payment-section-card-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.payment-section-card-option div:first-child{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.payment-section-card-option img{
+    width: 24px;
+    height: 24px;
+} 
+.payment-section-card-details{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:24px;
+
+}
+
+.payment-section-price-total{
+    display: flex;
+    flex-direction: column;
+    color: #474747;
+    font-family:'Open Sans';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.44px;
+}
+.payment-section-price-total > span:nth-child(2){
+    font-family:'Open Sans';
+    text-decoration: underline;
+    color: #595959;
+    font-size: 12px;
+    
+}
+.payment-section-price-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.payment-section-email-subscription{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border-radius: 8px;
+    color: #474747;
+    background: #F5F5F5;
+    padding: 16px 16px;
+}
+.payment-section-email-subscription > span{
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+}
+.payment-section-email-subscription img{
+    width: 16px;
+    height: 16px;
+}
+.payment-section-button-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+.payment-section-button-wrapper > span{
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+.payment-section-button-wrapper > button{
+    color:#F6F6F7;
+    display: flex;
+    width: fit-content;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: #0A0A0A;
+}
+.payment-details-wrapper{
+    padding: 40px 0px;
+    flex-grow: 1;
+}
+.payment-details-purchase{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 24px ;
+    border-bottom: 2px solid #D6D6D6;
+    justify-content: space-around;
+}
+.payment-details-purchase > img {
+    width: 100%;
+    height: 230px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.payment-details-purchase-info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+.payment-details-purchase-info > span{
+    font-family: 'Open Sans';
+    color: #474747;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    
+}
+.payment-details-purchase-description{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.payment-details-purchase-description .description-item > img{
+    width: 24px;
+    height: 24px;
+}
+.description-item{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+}
+.payment-details-purchase-description .description-item > span{
+    color: #474747;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+
+}
+.ticket-overview-wrapper{
+    display: flex;
+    padding-top: 24px;
+    flex-direction: column;
+}
+.ticket-overview-wrapper-title{
+    color:#474747;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom:24px;
+}
+.ticket-price-calculation{
+    display: flex;
+    flex-direction: column;
+}
+.ticket-price-calculation .price-item{
+    display: flex;
+    justify-content: space-between;
+    color:#474747;
+    gap: 16px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.ticket-price-calculation .price-discount-item{
+    display: flex;
+    justify-content: space-between;
+    color: #006642;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+.ticket-promo{
+    display: flex;
+    align-items: center;
+    gap:12px;
+    padding: 24px 0px;
+    color: #006642;
+    border-bottom: 2px solid #D6D6D6;
+    border-top: 2px solid #D6D6D6;
+}
+.ticket-final-price .price-item{
+    padding: 24px 0px;
+}
+.ticket-final-price .price-item > div{
+    color: #474747;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.ticket-final-price .price-item > span{
+    color: #595959;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.cancellation-detail{
+    border-radius: 12px;
+    background: #F5F5F5;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #595959;
+    font-family: 'Open Sans';
+}
+.cancellation-detail span:nth-child(1){
+    color: #474747;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+.cancellation-detail span:nth-child(2){
+    font-family: 'Open Sans';
+    color: #595959;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media (min-width:600px){
+    .payment-form-wrapper{
+        color: #474747;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        padding: 0px 24px;
+        flex-direction: column;
+        gap: 64px;
+        margin-top: 40px;
+        
+    }
+    .payment-form-container{
+        display: flex;
+        flex-direction: row;
+        max-width: 1280px;
+        padding-bottom: 24px;
+        
+    
+    }
+    .payment-form{
+        display: flex;
+        gap: 44px;
+        padding-right: 24px;
+        width: 60%;
+        border-top: none;
+        padding-top: 0px;
+    }
+    .payment-details-wrapper{
+        padding-left: 24px;
+        width: 30%;
+        padding-top: 0px;
+        border-left: 1px solid #D6D6D6 ;
+    }
+}
+
+@media (min-width: 800px){
+    .payment-section-card-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:24px;
+    
+    }
+    .payment-form-title{
+        transform: translateY(125px);
+    }
+    .payment-form{
+        width: 70%;
+        padding-top: 96px;
+    }
+    .payment-form-wrapper{
+        margin-top: 0px;
+    }
+    .payment-section-input-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:24px;
+        
+        
+    }
+
+}
